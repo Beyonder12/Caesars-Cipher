@@ -1,6 +1,6 @@
 function rot13(str) { // LBH QVQ VG!
   let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  let shiftedAlphabet = alphabet.slice(13) + alphabet.slice(0,13)
+  let shiftedAlphabet = alphabet.slice(13) + alphabet.slice(0,13) //NOPQRSTUVWXYZABCDEFGHIJKLM
   let decoded = []
   for(let i = 0; i < str.length; i++) {
     if(shiftedAlphabet.indexOf(str[i]) != -1) {
